@@ -1,0 +1,128 @@
+.item_index_top_div{
+    background-position: center top;
+    background-attachment: fixed;
+}
+.item_index_top_info  h2{
+    color:#ffffff;
+}
+.item_index_top_info  h4{
+    color: #ffffff;
+    border-top:2px solid #ffffff;
+    line-height:50px;
+    margin-top:20px;
+}
+
+.item_index_top_info{
+    padding:90px 0px;
+}
+
+.item_info{
+    margin-bottom: 80px;
+}
+
+.item_index{
+    margin-top: 30px;
+}
+
+.item_update{
+    color:#de7370;
+}
+
+
+
+/*********************************Item-Nav************************/
+
+.item-nav{
+    border-radius: 5px 5px  5px 5px;
+}
+
+.item-nav {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    top: 0;
+}
+.item-nav li {
+    display: inline-block;
+    line-height: 20px;
+    position: relative;
+    width: 100%;
+}
+.item-nav li:before {
+    background-color: #34b1c4;
+    content: '';
+    height: 100%;
+    left: 0;
+    position: absolute;
+    top: 0;
+    -webkit-transition: width 0.2s ease-in;
+    transition: width 0.2s ease-in;
+    width: 3px;
+    z-index: -1;
+}
+.item-nav li:first-child a {
+    background-color: #d9534f;
+    color: #ffffff;
+}
+
+.item-nav li:hover:before {
+    -webkit-transition: width 0.2s ease-in;
+    transition: width 0.2s ease-in;
+    width: 100%;
+}
+.item-nav li a {
+    color: #34b1c4;
+    display: block;
+    padding: 10px 15px 10px 30px;
+    text-decoration: none;
+}
+.item-nav li.open:hover:before {
+    -webkit-transition: width 0.2s ease-in;
+    transition: width 0.2s ease-in;
+    width: 100%;
+}
+.item-nav .dropdown-menu {
+    background-color: #222222;
+    border-radius: 0;
+    border: none;
+    box-shadow: none;
+    margin: 0;
+    padding: 0;
+    position: relative;
+    width: 100%;
+}
+.item-nav li a:hover,
+.item-nav li a:active,
+.item-nav li a:focus,
+.item-nav li.open a:hover,
+.item-nav li.open a:active,
+.item-nav li.open a:focus {
+    background-color: transparent;
+    color: #ffffff;
+    text-decoration: none;
+}
+.item-nav > .item-brand {
+    font-size: 20px;
+    height: 65px;
+    line-height: 44px;
+}
+
+/*
+.item-nav li  a{
+    color:#34b1c4;
+    transition: all 0.2s ease ;
+}
+
+.item-nav > li > a:hover, .item-nav > li > a:focus{
+    background:#34b1c4 repeat-x;!important;
+    color:#ffffff;!important;
+}
+
+*/
+
+.item-nav > li.active > a, .item-nav > li.active > a:hover , .item-nav > li.active > a:focus{
+    background-color:#34b1c4;!important;
+
+}
+
+

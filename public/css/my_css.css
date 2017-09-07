@@ -1,0 +1,306 @@
+
+
+/***********************Common*******************************/
+body{
+    padding-top:50px;
+}
+
+.section-title-top{
+    margin-top:80px;
+}
+.section-title-bottom  p{
+    color: #82939e;
+}
+
+.section-blue-bg{
+    background-color:#f6f9fc;
+}
+.section-black-bg{
+    background-color: #393f43;
+}
+
+.star-border::after, .star-border::before{
+    background: #34b1c4;
+    display: inline-block;
+    vertical-align:middle;
+    content: "";
+    width:60px;
+    height:1px;
+    margin-top:-6px;
+}
+
+.star-border{
+    margin-bottom: 10px;
+}
+
+.star-star{
+    color: #34b1c4;
+}
+
+/***********************Nav*******************************/
+
+/*.navbar-fixed-top {background-color: transparent!important;transition: background-color 1s ease 0s;padding:10px;}
+.navbar-fixed-top.opaque {background-color: rgba(34, 34, 34, 0.95)!important;transition: background-color 1s ease 0s;padding:10px;} */
+.headroom{
+     transition: top 0.2s ease-in-out 0s;
+ }
+.headroom-show{
+    top:0px;
+}
+.headroom-hidden{
+    top:-60px;
+}
+
+section{
+    overflow: hidden;
+}
+/***********************IndexBanner******************************/
+.index_banner{
+    background-position: center top;
+    height: 420px;
+}
+
+
+
+
+/***********************Look-Up******************************/
+.lookup-div{
+    background-color: #323943;
+    padding:10px 0px;
+}
+.lookup-form{
+    padding:6px 0px;
+}
+.lookup-form label{
+    color:#FFFFFF;
+}
+.lookup-div h5{
+    color:#FFFFFF;
+    font-size: 20px;
+}
+
+/***********************OurAdvantage*******************************/
+.our-advantage-div{
+    background-color:#f6f9fc;
+}
+
+.our-advantage-content{
+    margin-top:40px;
+    margin-bottom:80px;
+}
+
+/***********************Services*******************************/
+.server-box-bottom{
+    border: 1px #ddd solid;
+    transition:all 0.2s;
+}
+
+.server-box:hover .server-box-bottom{
+    box-shadow: 2px 0px 20px 2px #aeaeae;
+}
+
+.item-box-left-top{
+    border-right:1px #ddd solid;
+    border-bottom:1px #ddd solid;
+}
+.item-box-right-top{
+    border-bottom:1px #ddd solid;
+}
+
+.item-box-left-bottom{
+    border-right:1px #ddd solid;
+}
+
+.server-item{
+    padding-top:40px;
+    padding-bottom:20px;
+}
+
+.server-box-top{
+    border-top: 1px #ddd solid;
+    border-left: 1px #ddd solid;
+    border-right: 1px #ddd solid;
+    border-radius: 5px 70px 0px 0px;
+    padding-top:40px;
+    padding-bottom:40px;
+    color: #ffffff;
+    transition:all 0.2s;
+}
+.server-box:hover .server-box-top{
+    border-radius: 5px 5px 0px 0px;
+}
+
+.server-box{
+    margin-top:40px;
+    margin-bottom:80px;
+}
+
+.server-item > p{
+    color: #82939e;
+}
+
+.server-item span{
+    font-size:60px;
+}
+
+.server-box-blue > .server-box-top{
+    background-color: #15b6e6;
+}
+
+.server-box-blue > .server-box-bottom >.server-item span{
+    color: #5bc0de;
+}
+
+.server-box-red > .server-box-top{
+    background-color: #d9534f;
+}
+
+.server-box-red > .server-box-bottom >.server-item span{
+    color: #d9534f;
+}
+
+.server-box-green > .server-box-top{
+    background-color: #5cb85c;
+}
+
+.server-box-green > .server-box-bottom >.server-item span{
+    color: #5cb85c;
+}
+
+
+/***********************Choose-Us*******************************/
+.choose-us-div{
+    margin-top:60px;
+}
+.choose-us-div h1{
+    color: #ddd;
+}
+.choose-us-div-p{
+    color: #ddd!important;
+}
+
+.star-border-1::after, .star-border-1::before{
+    background: #ddd;
+    display: inline-block;
+    vertical-align:middle;
+    content: "";
+    width:60px;
+    height:1px;
+    margin-top:-6px;
+}
+
+.star-border-1{
+    margin-bottom: 10px;
+}
+
+.star-star-1{
+    color: #ddd;
+}
+.choose-us-div-form{
+    margin-top:30px ;
+}
+.choose-us-div-form label{
+    color: #ddd;
+}
+.person-info{
+    margin-bottom: 90px;
+}
+/***********************CompanyRegist*******************************/
+.company-div{
+    margin-bottom: 80px;
+}
+.company-regist-title{
+    margin-top:60px;
+}
+
+.company-regist-title p{
+    color:#858585;
+}
+.company-regist-content{
+    margin-top:80px;
+}
+
+/***********************ji-zhang*******************************/
+
+.jizhang-content{
+    margin-top:40px;
+    margin-bottom:80px;
+}
+/***********************our-team*******************************/
+.our-team-div h1,.our-team-div p{
+    color:#ddd;
+}
+.our-team-content{
+    margin-top:80px;
+    margin-bottom:80px;
+}
+
+.team-left p{
+    text-align: left;
+}
+
+/***********************Price-List*******************************/
+.prices-table-content{
+    margin-top:40px;
+}
+.price-tables-title{
+    background-color: #3781c3;
+}
+
+.price-big-table tr{
+    transition:all 0.1s;
+}
+.price-big-table tr:hover{
+    box-shadow: 2px 2px 20px 2px #aeaeae;
+}
+
+.price-big-table{
+    border: 0px solid transparent !important;
+}
+.price-big-table td{
+    border: 0px solid transparent !important;
+    font-size: 17px;
+}
+
+.title-table-item-1{
+    border-radius: 25px 0px 0px 0px;
+}
+.title-table-item-2{
+    border-radius: 0px 25px 0px 0px;
+}
+
+.price-money{
+    color: #e67712;
+}
+.price-tables-title td{
+    border: 0px solid !important;
+    font-size: 30px ;
+    color: #fff;
+}
+
+.price-classify{
+    color: #3781c3;
+    font-size: 25px !important;
+}
+
+.price-tables-content td{
+    border: 0px solid !important;
+}
+
+.table-content-top{
+    font-size: 25px;
+
+}
+
+/***********************Footer*******************************/
+.footer{
+    background-color: #2f3539;
+    padding:55px 0px;
+}
+.footer p a{
+    color:#34b1c4;
+}
+
+.footer p{
+    color: #cecece;
+}
