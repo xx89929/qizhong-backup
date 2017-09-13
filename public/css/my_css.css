@@ -1,5 +1,3 @@
-
-
 /***********************Common*******************************/
 body{
     padding-top:50px;
@@ -48,7 +46,7 @@ body{
     top:0px;
 }
 .headroom-hidden{
-    top:-60px;
+    top:-100px;
 }
 
 section{
@@ -225,6 +223,20 @@ section{
 .jizhang-content{
     margin-top:40px;
     margin-bottom:80px;
+}
+
+/***********************WebExample*******************************/
+
+.web-example-div{
+    margin-top:40px;
+}
+.web-example-item{
+    margin-bottom: 40px;
+    transition: all 0.5s;
+}
+
+.web-example-item:hover{
+    transform: scale(1.04);
 }
 /***********************our-team*******************************/
 .our-team-div h1,.our-team-div p{

@@ -15,7 +15,7 @@
             </div>
 
             <div class="our-advantage-content">
-                <img class="img-responsive" src="<?php echo e(url('image/adv-index.png')); ?>">
+                <img class="lazy img-responsive" data-original="<?php echo e(url('image/adv-index.png')); ?>">
             </div>
         </div>
     </div>

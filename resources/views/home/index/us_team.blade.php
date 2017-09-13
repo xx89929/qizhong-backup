@@ -23,7 +23,7 @@
                     </p>
                 </div>
                 <div class="team-right col-md-6">
-                    <img class="img-responsive" src="{{url('image/us_team.png')}}">
+                    <img class="lazy img-responsive" data-original="{{url('image/us_team.png')}}">
                 </div>
             </div>
         </div>

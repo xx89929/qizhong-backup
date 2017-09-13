@@ -25,6 +25,9 @@
     @include('home.layouts.footer')
 
 <script src="{{url('js/jquery-3.2.1.slim.min.js') }}"></script>
+<script src="{{url('js/lazyload.js') }}"></script>
+<script src="{{url('js/Headroom.js') }}"></script>
+<script src="{{url('js/jQuery.headroom.js') }}"></script>
 <script src="{{url('js/bootstrap.min.js') }}"></script>
 <script src="{{url('js/my_js.js') }}"></script>
 <script src="{{url('js/scrollreveal.js') }}"></script>

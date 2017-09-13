@@ -20,6 +20,9 @@
 <!-----------------------jizhang------------------>
 @include('home.index.jizhang')
 
+<!-----------------------WebExample------------------>
+@include('home.index.web_exp')
+
 <!-----------------------OurTeam------------------>
 @include('home.index.us_team')
 

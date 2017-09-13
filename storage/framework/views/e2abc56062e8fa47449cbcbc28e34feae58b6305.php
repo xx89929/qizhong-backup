@@ -14,7 +14,7 @@
                 </p>
             </div>
             <div class="jizhang-content">
-                <img class="img-responsive center-block" src="<?php echo e(url('image/jizhang-1.png')); ?>">
+                <img class="lazy img-responsive center-block" data-original="<?php echo e(url('image/jizhang-1.png')); ?>">
             </div>
         </div>
     </div>

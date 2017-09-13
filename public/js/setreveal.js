@@ -1,6 +1,6 @@
 
 window.sr = new ScrollReveal({
-    reset: true ,
+    reset: false ,
     distance: '300px',
     duration: 1500,
 });
@@ -26,5 +26,9 @@ sr.reveal('.jizhang-content',{origin:'bottom'});
 
 sr.reveal('.team-left',{origin:'left'});
 sr.reveal('.team-right',{origin:'right'});
+
+sr.reveal('.web-example-div',{origin:'bottom'});
+
+
 
 

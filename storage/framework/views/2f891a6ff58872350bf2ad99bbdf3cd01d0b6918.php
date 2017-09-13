@@ -20,6 +20,9 @@
 <!-----------------------jizhang------------------>
 <?php echo $__env->make('home.index.jizhang', array_except(get_defined_vars(), array('__data', '__path')))->render(); ?>
 
+<!-----------------------WebExample------------------>
+<?php echo $__env->make('home.index.web_exp', array_except(get_defined_vars(), array('__data', '__path')))->render(); ?>
+
 <!-----------------------OurTeam------------------>
 <?php echo $__env->make('home.index.us_team', array_except(get_defined_vars(), array('__data', '__path')))->render(); ?>
 
