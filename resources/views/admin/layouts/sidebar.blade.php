@@ -11,6 +11,6 @@
                 <li role="presentation" class="{{Request::getSchemeAndHttpHost().Request::getPathinfo() == route('bus_create') ? 'active' : ''}}"><a href="{{route('bus_create')}}">业务添加</a></li>
             </ul>
         </li>
-        <li role="presentation"><a href="#">横幅添加</a></li>
+        <li role="presentation" class="{{Request::getSchemeAndHttpHost().Request::getPathinfo() == route('choose_up') ? 'active' : ''}}"><a href="{{route('choose_up')}}">选择我们</a></li>
     </ul>
 </div>

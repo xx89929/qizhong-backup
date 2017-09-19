@@ -149,6 +149,9 @@ return [
         /****************qi-zhong-style*************/
         'lp.lp_phone'          => '在线查询手机号码',
         'lp.lp_company'          => '在线查询企业名称',
+        'data.client_name'      => '姓名',
+        'data.client_phone'      => '手机',
+        'data.services'      => '服务',
     ],
 
 ];

@@ -7,7 +7,7 @@
     <!-- 上述3个meta标签*必须*放在最前面，任何其他内容都*必须*跟随其后！ -->
     <!-- 百度JS接口说明 -->
     <meta name="viewport" content="initial-scale=1.0, user-scalable=no" />
-    <title>Home</title>
+    <title><?php echo e($web_title); ?></title>
     <!-- Bootstrap -->
     <link href="<?php echo e(url('css/bootstrap_index.css')); ?>" rel="stylesheet">
     <link href="<?php echo e(url('css/my_css.css')); ?>" rel="stylesheet">

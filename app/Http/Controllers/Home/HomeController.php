@@ -2,7 +2,9 @@
 namespace App\Http\Controllers\Home;
 
 use App\Business;
+use App\Choose;
 use App\Http\Controllers\Controller;
+use App\Http\Requests\ChooseupPost;
 use App\Http\Requests\LookupPost;
 use App\Lookup;
 use Illuminate\Http\Request;
@@ -17,7 +19,7 @@ class HomeController extends Controller
     public function index()
     {
         $bus_nav = Business::get(['id','bus_name']);
-        return view('home/index/index',['bus_nav' => $bus_nav]);
+        return view('home/index/index',['bus_nav' => $bus_nav,'web_title' => '海南企众官网首页']);
     }
 
     /**
@@ -29,7 +31,7 @@ class HomeController extends Controller
         $bus_nav = Business::get(['id','bus_name']);
         $item = Business::find($id);
 
-        return view('home/business/index',['res' => $item,'bus_nav' => $bus_nav]);
+        return view('home/business/index',['res' => $item,'bus_nav' => $bus_nav,'web_title' => '业务范围']);
     }
 
     /**
@@ -53,6 +55,16 @@ class HomeController extends Controller
 
     public function aboutus_index(){
         $bus_nav = Business::get(['id','bus_name']);
-        return view('home/aboutus/index',['bus_nav' => $bus_nav]);
+        return view('home/aboutus/index',['bus_nav' => $bus_nav,'web_title' => '关于我们']);
+    }
+
+    public function save_choose_up(ChooseupPost $request){
+        $data = $request->input('data');
+        $data['services'] = implode(',',$data['services']);
+        $choose = new Choose();
+        $choose->client_name = $data['client_name'];
+        $choose->client_phone = $data['client_phone'];
+        $choose->services = $data['services'];
+        $res = $choose->save();
     }
 }

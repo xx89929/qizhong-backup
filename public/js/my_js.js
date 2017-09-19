@@ -27,7 +27,6 @@ $(document).ready(function(){
     });
 
     headroom.init();
-    console.log(headroom);
 });
 
 

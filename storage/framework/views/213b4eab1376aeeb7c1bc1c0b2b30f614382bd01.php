@@ -16,36 +16,46 @@
 
             <div class="person-info">
                 <div class="col-md-6 col-md-offset-3 choose-us-div-form">
-                    <form>
+                    <form method="post" action="<?php echo e(route('chooseup_add')); ?>">
+                        <?php echo e(csrf_field()); ?>
+
                         <div class="form-group text-left">
                             <label  for="yourName">您的姓名：</label>
-                            <input type="text" class="form-control" id="yourName" placeholder="请填写您的姓名">
+                            <input type="text" name="data[client_name]" class="form-control" id="yourName" placeholder="请填写您的姓名">
+                            <?php if($errors->has('data.client_name')): ?>
+                                <span class="help-block-my"><?php echo e($errors->first('data.client_name')); ?></span>
+                            <?php endif; ?>
                         </div>
                         <div class="form-group text-left">
                             <label for="yourPhone">您的联系电话：</label>
-                            <input type="text" class="form-control" id="yourPhone" placeholder="请填写您的联系电话">
+                            <input type="text" name="data[client_phone]" class="form-control" id="yourPhone" placeholder="请填写您的联系电话">
+                            <?php if($errors->has('data.client_phone')): ?>
+                                <span class="help-block-my"><?php echo e($errors->first('data.client_phone')); ?></span>
+                            <?php endif; ?>
                         </div>
                         <div class="form-group text-left">
                             <label for="yourPhone">您想代理的业务类型：</label>
                             <div class="checkbox">
                                 <label>
-                                    <input type="checkbox" value="">
+                                    <input name="data[services][]" type="checkbox" value="1">
                                     工商服务
-
                                 </label>
                             </div>
                             <div class="checkbox">
                                 <label>
-                                    <input type="checkbox" value="">
+                                    <input name="data[services][]" type="checkbox" value="2">
                                     财务服务
                                 </label>
                             </div>
                             <div class="checkbox">
                                 <label>
-                                    <input type="checkbox" value="">
+                                    <input name="data[services][]" type="checkbox" value="3">
                                     科技服务
                                 </label>
                             </div>
+                            <?php if($errors->has('data.services')): ?>
+                                <span class="help-block-my"><?php echo e($errors->first('data.services')); ?></span>
+                            <?php endif; ?>
                         </div>
                         <button type="submit" class="btn btn-info btn-lg">提交</button>
                     </form>

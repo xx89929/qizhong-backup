@@ -7,7 +7,7 @@
                 <span class="icon-bar"></span>
                 <span class="icon-bar"></span>
             </button>
-            <a class="navbar-brand" href="#">海南企众实业</a>
+            <a class="navbar-brand" href="#">海南企众实业 &nbsp;&nbsp;&nbsp;0898-66766640</a>
         </div>
         <div id="navbar" class="collapse navbar-collapse navbar-right" role="navigation">
             <ul class="nav navbar-nav nav-alls">
@@ -19,12 +19,13 @@
                     </a>
                     <ul class="dropdown-menu">
                         <?php $__currentLoopData = $bus_nav; $__env->addLoop($__currentLoopData); foreach($__currentLoopData as $nav): $__env->incrementLoopIndices(); $loop = $__env->getLastLoop(); ?>
-                        <li><a href="<?php echo e(route('business_index',['id' => $nav->id])); ?>"><?php echo e($nav->bus_name); ?></a></li>
+                        <li class="<?php echo e(Request::getSchemeAndHttpHost().Request::getPathinfo() == route('business_index',['id' => $nav->id]) ? 'active' : ''); ?>"><a href="<?php echo e(route('business_index',['id' => $nav->id])); ?>"><?php echo e($nav->bus_name); ?></a></li>
                         <?php endforeach; $__env->popLoop(); $loop = $__env->getLastLoop(); ?>
                     </ul>
                 </li>
-                <li><a href="#contact">行业资讯</a></li>
+                <li class="disabled"><a href="#contact">行业资讯</a></li>
             </ul>
+
         </div><!--/.nav-collapse -->
     </div>
 </nav>

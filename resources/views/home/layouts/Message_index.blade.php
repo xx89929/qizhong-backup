@@ -1,4 +1,4 @@
-@if(count($errors))
+@if($errors->has('lp.*'))
     <div id="myAlert" class="alert alert-danger text-center">
         <a href="#" class="close" data-dismiss="alert">&times;</a>
         @foreach($errors->all() as $error)

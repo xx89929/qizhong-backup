@@ -1,4 +1,4 @@
-<?php if(count($errors)): ?>
+<?php if($errors->has('lp.*')): ?>
     <div id="myAlert" class="alert alert-danger text-center">
         <a href="#" class="close" data-dismiss="alert">&times;</a>
         <?php $__currentLoopData = $errors->all(); $__env->addLoop($__currentLoopData); foreach($__currentLoopData as $error): $__env->incrementLoopIndices(); $loop = $__env->getLastLoop(); ?>
