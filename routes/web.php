@@ -23,6 +23,7 @@ Route::group(['middleware'=> ['web'],'namespace' => 'Home'],function(){
     Route::post('save_lookup','HomeController@save_lookup')->name('save_lookup');
     Route::get('aboutus/index','HomeController@aboutus_index')->name('aboutus_index');
     Route::post('chooseupadd','HomeController@save_choose_up')->name('chooseup_add');
+    
 });
 
 
