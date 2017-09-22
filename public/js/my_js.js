@@ -46,3 +46,7 @@ $(function() {
 //        $(this).addClass('active');
 //    })
 //})
+
+$(document).ready(function(){
+    $("#top_btn").click(function(){if(scroll=="off") return;$("html,body").animate({scrollTop: 0}, 600);});
+});

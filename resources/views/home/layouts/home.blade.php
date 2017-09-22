@@ -20,11 +20,14 @@
     <![endif]-->
 </head>
 <body>
+    @include('home.layouts.qq-kefu')
     @include('home.layouts.nav')
         @yield('content')
     @include('home.layouts.footer')
 
+
 <script src="{{url('js/jquery-3.2.1.slim.min.js') }}"></script>
+<script src="https://cdn.bootcss.com/jquery/3.2.1/jquery.min.js"></script>
 <script src="{{url('js/lazyload.js') }}"></script>
 <script src="{{url('js/Headroom.js') }}"></script>
 <script src="{{url('js/jQuery.headroom.js') }}"></script>

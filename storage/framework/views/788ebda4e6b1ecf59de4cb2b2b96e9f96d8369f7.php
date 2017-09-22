@@ -20,11 +20,14 @@
     <![endif]-->
 </head>
 <body>
+    <?php echo $__env->make('home.layouts.qq-kefu', array_except(get_defined_vars(), array('__data', '__path')))->render(); ?>
     <?php echo $__env->make('home.layouts.nav', array_except(get_defined_vars(), array('__data', '__path')))->render(); ?>
         <?php echo $__env->yieldContent('content'); ?>
     <?php echo $__env->make('home.layouts.footer', array_except(get_defined_vars(), array('__data', '__path')))->render(); ?>
 
+
 <script src="<?php echo e(url('js/jquery-3.2.1.slim.min.js')); ?>"></script>
+<script src="https://cdn.bootcss.com/jquery/3.2.1/jquery.min.js"></script>
 <script src="<?php echo e(url('js/lazyload.js')); ?>"></script>
 <script src="<?php echo e(url('js/Headroom.js')); ?>"></script>
 <script src="<?php echo e(url('js/jQuery.headroom.js')); ?>"></script>

@@ -20,8 +20,8 @@
         </address>
 
         <address>
-            <strong>Full Name</strong><br>
-            <a href="mailto:#">first.last@example.com</a>
+            <strong>企业邮箱</strong><br>
+            <a href="mailto:#">3385434967@qq.com</a>
         </address>
     </div>
 </div>

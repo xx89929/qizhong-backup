@@ -199,6 +199,7 @@ section{
 }
 .choose-us-div-form{
     margin-top:30px ;
+    margin-bottom:30px;
 }
 .choose-us-div-form label{
     color: #ddd;
@@ -318,4 +319,39 @@ section{
 
 .footer p{
     color: #cecece;
+}
+
+/***********************QQHelp*******************************/
+.fudong-div{
+    position: fixed;
+    top:400px;
+    right:0px;
+    z-index:999;
+}
+
+.fudong-div li{
+    margin-bottom: 10px;
+}
+
+.fudong-div a:hover .kefu-hide{
+margin-right: 0px;
+display: block;
+}
+
+.fudong-div  a:hover .kefu-show{
+margin-right: -143px;
+display: none;
+}
+
+.kefu-hide{
+transition:all 1s;
+margin-right: -143px;
+display: none;
+}
+
+
+.kefu-show{
+transition:all 1s;
+margin-right: 0px;
+display: block;
 }
