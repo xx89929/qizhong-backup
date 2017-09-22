@@ -17,7 +17,7 @@ Route::get('/', function () {
 });
 */
 
-Route::group(['namespace' => 'Home'],function(){
+Route::group(['middleware'=> ['web'],'namespace' => 'Home'],function(){
     Route::get('/','HomeController@index')->name('/');
     Route::get('BusinessIndex/{id}','HomeController@business_index')->name('business_index');
     Route::post('save_lookup','HomeController@save_lookup')->name('save_lookup');
