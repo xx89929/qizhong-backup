@@ -1,12 +1,13 @@
 <?php
 namespace App\Http\Controllers\Home;
 
-use App\Business;
-use App\Choose;
+
 use App\Http\Controllers\Controller;
 use App\Http\Requests\ChooseupPost;
 use App\Http\Requests\LookupPost;
-use App\Lookup;
+use App\Models\Business;
+use App\Models\Choose;
+use App\Models\Lookup;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Validator;
 

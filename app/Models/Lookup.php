@@ -1,12 +1,12 @@
 <?php
 
-namespace App;
+namespace App\Models;
 
 use Illuminate\Database\Eloquent\Model;
 
-class Business extends Model
+class Lookup extends Model
 {
-    protected $table = "qi_business";
+    protected $table = "qi_lookup";
 
     protected $dateFormat = "U";
 }
