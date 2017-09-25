@@ -1,3 +1,7 @@
+<style type="text/css">
+    #allmap{width:100%;height:500px;}
+</style>
+
 <div class="fudong-div">
     <ul class="list-unstyled kefu-ul">
         <li>
@@ -8,7 +12,7 @@
         </li>
 
         <li>
-            <a class="pull-right" href="#">
+            <a class="pull-right" href="#" data-toggle="modal" data-target="#myModal">
                 <img class="kefu-hide" src="{{url('image/location_width_icon.png')}}">
                 <img class="kefu-show" src="{{url('image/location_icon.png')}}">
             </a>
@@ -21,4 +25,20 @@
             </a>
         </li>
     </ul>
+</div>
+
+
+<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                <h4 class="modal-title" id="myModalLabel">Modal title</h4>
+            </div>
+            <div class="modal-body">
+                @include('home.layouts.baidu-map')
+            </div>
+
+        </div>
+    </div>
 </div>

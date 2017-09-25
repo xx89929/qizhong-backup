@@ -39,3 +39,4 @@ Route::group(['prefix' => 'admin','namespace' => 'Admin'], function () {
     Route::get('lookup/index','LookupController@index')->name('lookup');
     Route::get('choose_up/index','ChooseUpController@index')->name('choose_up');
 });
+

@@ -170,9 +170,7 @@ section{
 .help-block-my{
     color: #f9f303;
 }
-.choose-us-div{
-    margin-top:60px;
-}
+
 .choose-us-div h1{
     color: #ddd;
 }
@@ -358,4 +356,27 @@ display: block;
 
 .kefu-ul{
     width:49px;
+}
+
+/***********************about_us*******************************/
+.about-imgages_gly{
+    font-size:30px;
+    padding-top:8px;
+}
+
+.about_centent{
+    padding-top: 80px;
+    padding-bottom: 80px;
+}
+
+.about_div_2 h4 ,.about_div_2 h1,.about_div_2 span{
+    color:#ffffff;
+}
+
+.about_centent ul li{
+    margin-top:30px;
+}
+
+.about_div_2{
+    background-color:#f08678 ;
 }
