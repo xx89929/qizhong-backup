@@ -36,7 +36,7 @@
                         <span class="glyphicon glyphicon-th-list pull-right" aria-hidden="true"></span>
                     </div>
                     <div class="col-md-10 col-xs-10">
-                        <h4>我们是以诚信为本，提供便捷、安全、稳定、优质的服务公司</h4>
+                        <h4>我们是以诚信为本，提供便捷、安全、稳定、优质服务的创新型公司</h4>
                     </div>
                 </li>
             </ul>

@@ -61,11 +61,17 @@ class HomeController extends Controller
 
     public function save_choose_up(ChooseupPost $request){
         $data = $request->input('data');
-        $data['services'] = implode(',',$data['services']);
+        $data['services'] = serialize($data['services']);
+        $data['services'] = json_encode($data['services']);
         $choose = new Choose();
         $choose->client_name = $data['client_name'];
         $choose->client_phone = $data['client_phone'];
         $choose->services = $data['services'];
         $res = $choose->save();
+        if($res == false){
+            return redirect()->back()->with('error','查询失败');
+        }else{
+            return redirect()->back()->with('success','成功，我们会在1个工作日内联系您');
+        }
     }
 }
