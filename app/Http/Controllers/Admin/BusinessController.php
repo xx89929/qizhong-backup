@@ -1,8 +1,9 @@
 <?php
 namespace App\Http\Controllers\Admin;
 
-use App\Business;
+
 use App\Http\Controllers\Controller;
+use App\Models\Business;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Bus;
 use Symfony\Component\Yaml\Tests\B;

@@ -20,7 +20,11 @@
                     <td>{{($res->currentPage()*10-10)+($loop->index + 1)}}</td>
                     <td>{{$r->client_name}}</td>
                     <td>{{$r->client_phone}}</td>
-                    <td>{{$r->services}}</td>
+                    <td>
+                    @foreach($r->services as $server)
+                    {{$server}}
+                    @endforeach
+                    </td>
                     <td>{{$r->created_at}}</td>
                     <td>{{$r->updated_at}}</td>
                     <td>

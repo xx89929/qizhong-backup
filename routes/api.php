@@ -16,3 +16,10 @@ use Illuminate\Http\Request;
 Route::middleware('auth:api')->get('/user', function (Request $request) {
     return $request->user();
 });
+
+Route::group(['prefix' => 'weixin','namespace' => 'Weixin'], function () {
+    Route::get('/','WeixinController@index');
+    Route::get('/getaccesstoken','WeixinController@getAccessToken');
+});
+
+

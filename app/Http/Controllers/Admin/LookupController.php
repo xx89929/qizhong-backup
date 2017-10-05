@@ -1,7 +1,8 @@
 <?php
 namespace App\Http\Controllers\Admin;
 use App\Http\Controllers\Controller;
-use App\Lookup;
+use App\Models\Lookup;
+
 
 class LookupController extends  Controller{
 
