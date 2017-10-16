@@ -10,7 +10,7 @@
     <title>{{$web_title}}</title>
     <!-- Bootstrap -->
     <link href="{{url('css/bootstrap_index.css') }}" rel="stylesheet">
-    <link href="{{url('css/my_css.css') }}" rel="stylesheet">
+    <link href="{{url('css/style.css') }}" rel="stylesheet">
 
     <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -20,11 +20,11 @@
     <![endif]-->
 </head>
 <body>
-    @include('home.layouts.qq-kefu')
+
     @include('home.layouts.nav')
         @yield('content')
     @include('home.layouts.footer')
-
+    @include('home.layouts.qq-kefu')
 
 <script src="{{url('js/jquery-3.2.1.slim.min.js') }}"></script>
 <script src="https://cdn.bootcss.com/jquery/3.2.1/jquery.min.js"></script>
@@ -32,7 +32,7 @@
 <script src="{{url('js/Headroom.js') }}"></script>
 <script src="{{url('js/jQuery.headroom.js') }}"></script>
 <script src="{{url('js/bootstrap.min.js') }}"></script>
-<script src="{{url('js/my_js.js') }}"></script>
+<script src="{{url('js/common.js') }}"></script>
 <script src="{{url('js/scrollreveal.js') }}"></script>
 <script src="{{url('js/setreveal.js') }}"></script>
 </body>

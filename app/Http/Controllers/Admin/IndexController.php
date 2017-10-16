@@ -10,6 +10,10 @@ class IndexController extends Controller
      */
     public function index()
     {
-        return view('admin/auth/index');
+        return view('admin/welcome/index',['web_title' => '海南企众后台管理系统']);
+    }
+
+    public function welcome(){
+        return view('admin/welcome/welcome');
     }
 }

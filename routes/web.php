@@ -31,12 +31,17 @@ Route::group(['middleware'=> ['web'],'namespace' => 'Home'],function(){
  * 后台路由
  */
 Route::group(['prefix' => 'admin','namespace' => 'Admin'], function () {
-    Route::get('/','IndexController@index');
+    Route::get('index','IndexController@index')->name('/');
     Route::get('business/index','BusinessController@index')->name('bus_index');
+    Route::get('business/get_business','BusinessController@get_business')->name('get_business');
     Route::match(['post','get'],'business/create','BusinessController@create')->name('bus_create');
-    Route::match(['post','get'],'business/update/{id}','BusinessController@update')->name('bus_update');
-    Route::get('business/del/{id}','BusinessController@del')->name('bus_del');
+    Route::match(['post','get'],'business/update/{id?}','BusinessController@update')->name('bus_update');
+    Route::get('business/del/{id?}','BusinessController@del')->name('bus_del');
     Route::get('lookup/index','LookupController@index')->name('lookup');
     Route::get('choose_up/index','ChooseUpController@index')->name('choose_up');
+
+    Route::get('welcome','IndexController@welcome')->name('welcome');
+    Route::get('member/list','MemberController@index')->name('member_list');
+    Route::get('business','BusinessController@index')->name('business');
 });
 

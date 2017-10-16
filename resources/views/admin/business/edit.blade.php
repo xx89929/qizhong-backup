@@ -1,6 +1,4 @@
 @extends('admin.layouts.admin')
-@section('content')
-    <div class="edit">
-        @include('admin.business._form')
-    </div>
+@section('layout')
+    @include('admin.business._form')
 @endsection
