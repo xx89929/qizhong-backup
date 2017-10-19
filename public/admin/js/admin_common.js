@@ -44,6 +44,7 @@ layui.use(['element','laydate','layer','jquery','layedit','form','table','laytpl
                 dataType:"json",
                 success:function(data){
                     layer.msg(data.msg, {
+
                         icon: 1,
                         time: 1000 //2秒关闭（如果不配置，默认是3秒）
                     }, function(){
@@ -73,6 +74,7 @@ layui.use(['element','laydate','layer','jquery','layedit','form','table','laytpl
                     data:param,
                     success:function(data){
                         layer.msg(data.msg, {
+
                             icon: 1,
                             time: 1000 //2秒关闭（如果不配置，默认是3秒）
                         }, function(){
@@ -114,12 +116,12 @@ layui.use(['element','laydate','layer','jquery','layedit','form','table','laytpl
     /**
      * 构建富文本编辑器
      */
-    var ide_index = layedit.build('BusContent');
+    var ide_index = layedit.build('ItemContent');
 
     /**
      * 触发添加窗口事件
      */
-    $("#add_business_btn").on('click',function(){
+    $("#add_btn").on('click',function(){
         var url = $(this).attr('url');
         layer_elem.open_AddBusForm(url);
     });
@@ -128,10 +130,11 @@ layui.use(['element','laydate','layer','jquery','layedit','form','table','laytpl
     /**
      * 批量删除事件
      */
-    $('#del_business_btn').on('click',function(){
+    $('#del_btn').on('click',function(){
         var list=[];
         var href = $(this).attr('url');
-        var checkStatus = table.checkStatus('business_list');
+        var checkname = $('.layui-table').attr('id');
+        var checkStatus = table.checkStatus(checkname);
         for(var i=0;i<checkStatus.data.length;i++){
             list.push(checkStatus.data[i]['id']);
         }
@@ -147,7 +150,8 @@ layui.use(['element','laydate','layer','jquery','layedit','form','table','laytpl
         var index = parent.layer.getFrameIndex(window.name);
         var url = window.location.href;
         var content = layedit.getContent(ide_index);
-        $(data.field).attr("business[content]",content);
+        $itemcontent = $('#ItemContent').attr('name');
+        $(data.field).attr($itemcontent,content);
         layer_elem.ajax_add_close(index,url,data.field);
         return false;
     });
@@ -176,7 +180,7 @@ layui.use(['element','laydate','layer','jquery','layedit','form','table','laytpl
     /**
      * 监听table工具类
      */
-    table.on('tool(business_list)', function(obj){ //注：tool是工具条事件名，test是table原始容器的属性 lay-filter="对应的值"
+    table.on('tool(item_list)', function(obj){ //注：tool是工具条事件名，test是table原始容器的属性 lay-filter="对应的值"
         var data = obj.data; //获得当前行数据
         var layEvent = obj.event; //获得 lay-event 对应的值
         var tr = obj.tr; //获得当前行 tr 的DOM对象
@@ -190,5 +194,7 @@ layui.use(['element','laydate','layer','jquery','layedit','form','table','laytpl
             layer_elem.open_AddBusForm(url);
         }
     });
+
+    console.log($('dd.layui-this').parents('li').addClass('layui-nav-itemed'));
 });
 

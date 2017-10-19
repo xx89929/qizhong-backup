@@ -25,5 +25,9 @@
 </head>
 <body class="layui-layout-body">
     @yield('layout')
+
+    {{--<script src="{{url('admin/vue/vue.js') }}"></script>--}}
+    {{--<script src="{{url('admin/vue/vue-resource.js') }}"></script>--}}
+    {{--<script src="{{url('admin/js/vue_common.js') }}"></script>--}}
 </body>
 </html>

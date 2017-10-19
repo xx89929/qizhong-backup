@@ -10,7 +10,7 @@
     <div class="layui-form-item layui-col-lg12">
         <label class="layui-form-label layui-col-lg4">业务内容</label>
         <div class="layui-input-block">
-        <textarea name="business[content]" class="layui-textarea" id="BusContent" style="display: none">
+        <textarea name="business[content]" class="layui-textarea" id="ItemContent" style="display: none">
             {{isset($edit->bus_content) ? $edit->bus_content :old('business')['content']}}
         </textarea>
         </div>

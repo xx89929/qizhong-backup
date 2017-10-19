@@ -14,8 +14,8 @@ class BusinessController extends Controller
      */
     public function index()
     {
-        $res = Business::paginate(10);
-        return view('admin/business/index',['res' => $res , 'web_title' => '业务范围管理']);
+
+        return view('admin/business/index',['web_title' => '业务范围管理']);
     }
 
     public function get_business(Request $request){

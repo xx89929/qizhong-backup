@@ -2,7 +2,7 @@
     <div class="layui-logo">海南企众</div>
     <!-- 头部区域（可配合layui已有的水平导航） -->
     <ul class="layui-nav layui-layout-left">
-        <li class="layui-nav-item"><a href="{{route('/')}}">控制台</a></li>
+        <li class="layui-nav-item {{Request::getSchemeAndHttpHost().Request::getPathinfo() == route('/') ? 'layui-this' : ''}}" ><a href="{{route('/')}}">控制台</a></li>
         <li class="layui-nav-item"><a href="">商品管理</a></li>
         <li class="layui-nav-item"><a href="">用户</a></li>
         <li class="layui-nav-item">
@@ -18,13 +18,13 @@
         <li class="layui-nav-item">
             <a href="javascript:;">
                 <img src="http://t.cn/RCzsdCq" class="layui-nav-img">
-                贤心
+                {{--{{$UserName}}--}}
             </a>
             <dl class="layui-nav-child">
                 <dd><a href="">基本资料</a></dd>
                 <dd><a href="">安全设置</a></dd>
             </dl>
         </li>
-        <li class="layui-nav-item"><a href="">退了</a></li>
+        <li id="login_out"  class="layui-nav-item"><a href="{{route('logout')}}">退出</a></li>
     </ul>
 </div>

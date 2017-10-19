@@ -4,6 +4,8 @@ namespace App\Http\Controllers\Auth;
 
 use App\User;
 use App\Http\Controllers\Controller;
+use Illuminate\Auth\Events\Registered;
+use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Validator;
 use Illuminate\Foundation\Auth\RegistersUsers;
 
@@ -27,7 +29,7 @@ class RegisterController extends Controller
      *
      * @var string
      */
-    protected $redirectTo = '/home';
+//    protected $redirectTo = '/home';
 
     /**
      * Create a new controller instance.
@@ -68,4 +70,27 @@ class RegisterController extends Controller
             'password' => bcrypt($data['password']),
         ]);
     }
+
+    protected function redirectTo(){
+        return redirect()->route('login');
+    }
+    public function showRegistrationForm(){
+        return view('auth/register');
+    }
+
+    public function register(Request $request)
+    {
+        $data['name'] = $request->input('name');
+        $data['email'] = $request->input('email');
+        $data['password'] = $request->input('password');
+        $this->validator($request->all())->validate();
+
+        event(new Registered($user = $this->create($data)));
+
+        $this->guard()->login($user);
+
+
+        return $this->registered($request, $user) ?: $this->redirectPath();
+    }
+
 }
