@@ -26,7 +26,7 @@ Route::group(['middleware'=> ['web'],'namespace' => 'Home'],function(){
 });
 
 
-Route::group(['namespace' => 'auth'],function(){
+Route::group(['namespace' => 'Auth'],function(){
     Route::get('login','LoginController@showLoginForm')->name('login');
     Route::post('login','LoginController@login')->name('login');
     Route::get('register','RegisterController@showRegistrationForm')->name('register');
