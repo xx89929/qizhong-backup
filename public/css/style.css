@@ -36,7 +36,12 @@ body{
 }
 
 /***********************Nav*******************************/
-
+.logo_image{
+    padding:0px !important;
+}
+.logo_image img{
+    height: 50px;
+}
 /*.navbar-fixed-top {background-color: transparent!important;transition: background-color 1s ease 0s;padding:10px;}
 .navbar-fixed-top.opaque {background-color: rgba(34, 34, 34, 0.95)!important;transition: background-color 1s ease 0s;padding:10px;} */
 .headroom{

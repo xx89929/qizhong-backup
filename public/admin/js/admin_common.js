@@ -43,6 +43,8 @@ layui.use(['element','laydate','layer','jquery','layedit','form','table','laytpl
                 type:"Post",
                 dataType:"json",
                 success:function(data){
+                    //console.log(data);
+                    //return false;
                     layer.msg(data.msg, {
 
                         icon: 1,
@@ -53,6 +55,8 @@ layui.use(['element','laydate','layer','jquery','layedit','form','table','laytpl
                     })
                 },
                 error:function(data){
+                    console.log(data);
+                    return false;
                     layer.msg(data.msg, {
                         icon: 2,
                         time: 1000 //2秒关闭（如果不配置，默认是3秒）
@@ -95,6 +99,11 @@ layui.use(['element','laydate','layer','jquery','layedit','form','table','laytpl
             });
 
         },
+    };
+
+
+    var test = {
+
     };
 
     //富文本 触发事件
@@ -187,7 +196,6 @@ layui.use(['element','laydate','layer','jquery','layedit','form','table','laytpl
         var href =  $(this).attr('url');
         var id =  $(this).attr('this-id');
         var url = href+"/"+id;
-        console.log(url);
         if(layEvent === 'del'){ //删除
             layer_elem.ajax_del(url);
         } else if(layEvent === 'edit'){ //编辑
@@ -195,6 +203,6 @@ layui.use(['element','laydate','layer','jquery','layedit','form','table','laytpl
         }
     });
 
-    console.log($('dd.layui-this').parents('li').addClass('layui-nav-itemed'));
+    $('dd.layui-this').parents('li').addClass('layui-nav-itemed');
 });
 

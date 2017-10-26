@@ -19,7 +19,9 @@ Route::middleware('auth:api')->get('/user', function (Request $request) {
 
 Route::group(['prefix' => 'weixin','namespace' => 'Weixin'], function () {
     Route::get('/','WeixinController@index');
-    Route::get('/getaccesstoken','WeixinController@getAccessToken');
+    Route::get('getaccesstoken','WeixinController@getAccessToken');
+    Route::post('add_weichoose','WeiChooseController@create');
+    Route::post('login','WeiLoginController@login');
 });
 
 

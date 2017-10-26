@@ -36,19 +36,19 @@
                             <label for="yourPhone">您想代理的业务类型：</label>
                             <div class="checkbox">
                                 <label>
-                                    <input name="data[services][]" type="checkbox" value="1">
+                                    <input name="data[services][]" type="checkbox" value="工商服务">
                                     工商服务
                                 </label>
                             </div>
                             <div class="checkbox">
                                 <label>
-                                    <input name="data[services][]" type="checkbox" value="2">
+                                    <input name="data[services][]" type="checkbox" value="财务服务">
                                     财务服务
                                 </label>
                             </div>
                             <div class="checkbox">
                                 <label>
-                                    <input name="data[services][]" type="checkbox" value="3">
+                                    <input name="data[services][]" type="checkbox" value="科技服务">
                                     科技服务
                                 </label>
                             </div>

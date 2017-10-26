@@ -57,7 +57,15 @@ Route::group(['middleware' => ['auth'],'prefix' => 'admin','namespace' => 'Admin
     Route::get('lookup/del/{id?}','LookupController@del')->name('lp_del');
 
 
-    Route::get('choose_up/index','ChooseUpController@index')->name('choose_up');
+    /****choose****/
+    Route::get('chooseup/index','ChooseUpController@index')->name('chooseup');
+    Route::get('chooseup/getchooseup','ChooseUpController@get_chooseup')->name('get_chooseup');
+    Route::match(['post','get'],'chooseup/choosecreate','ChooseUpController@create')->name('choose_create');
+    Route::match(['post','get'],'chooseup/update/{id?}','ChooseUpController@update')->name('choose_update');
+    Route::get('choose/del/{id?}','ChooseUpController@del')->name('choose_del');
+
+
+    /****administritor****/
     Route::get('welcome','IndexController@welcome')->name('welcome');
     Route::get('member/list','MemberController@index')->name('member_list');
     Route::get('business','BusinessController@index')->name('business');

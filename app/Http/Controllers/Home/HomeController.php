@@ -61,7 +61,8 @@ class HomeController extends Controller
 
     public function save_choose_up(ChooseupPost $request){
         $data = $request->input('data');
-        $data['services'] = serialize($data['services']);
+        $data['services'] = implode($data['services']);
+//        $data['services'] = serialize($data['services']);
         $data['services'] = json_encode($data['services']);
         $choose = new Choose();
         $choose->client_name = $data['client_name'];

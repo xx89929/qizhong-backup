@@ -40,4 +40,12 @@ class ChooseupPost extends FormRequest
         */
     }
 
+    public function messages(){
+        return [
+            'data.client_phone' => '手机号必须',
+            'data.client_name'  => '姓名必须',
+            'data.services'  => '服务必须',
+        ];
+    }
+
 }

@@ -11,7 +11,7 @@
     <!-- Bootstrap -->
     <link href="{{url('css/bootstrap_index.css') }}" rel="stylesheet">
     <link href="{{url('css/style.css') }}" rel="stylesheet">
-
+    <link rel="Shortcut Icon" href="{{url('image/logo_icon.png')}}" type="image/x-icon">
     <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
     <!--[if lt IE 9]>

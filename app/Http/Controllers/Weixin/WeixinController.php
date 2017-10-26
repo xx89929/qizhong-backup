@@ -9,6 +9,7 @@ use Illuminate\Support\Facades\Log;
 class WeixinController extends Controller
 {
     public function index(Request $request){
+        echo 123;exit;
         return $request->input('echostr');
     }
 

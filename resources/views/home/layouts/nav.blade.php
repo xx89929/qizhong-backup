@@ -7,7 +7,7 @@
                 <span class="icon-bar"></span>
                 <span class="icon-bar"></span>
             </button>
-            <a class="navbar-brand" href="#">海南企众实业 &nbsp;&nbsp;&nbsp;0898-66766640</a>
+            <a class="navbar-brand logo_image" href="#"><img src="{{url('image/logo_fuild.png')}}"></a>
         </div>
         <div id="navbar" class="collapse navbar-collapse navbar-right" role="navigation">
             <ul class="nav navbar-nav nav-alls">
