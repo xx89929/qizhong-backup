@@ -16,6 +16,7 @@ Route::get('/', function () {
 
 });
 */
+Route::get('test','TestController@index')->name('test');
 
 Route::group(['middleware'=> ['web'],'namespace' => 'Home'],function(){
     Route::get('/','HomeController@index')->name('/');
@@ -40,7 +41,11 @@ Route::group(['namespace' => 'Auth'],function(){
  * 后台路由
  */
 Route::group(['middleware' => ['auth'],'prefix' => 'admin','namespace' => 'Admin'], function () {
+
+
+
     Route::get('index','IndexController@index')->name('admin');
+
 
     /**Bussiness**/
     Route::get('business/index','BusinessController@index')->name('bus_index');

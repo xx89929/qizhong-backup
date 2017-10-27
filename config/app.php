@@ -179,6 +179,9 @@ return [
 
         Laravel\Passport\PassportServiceProvider::class,
 
+        //微信服务提供者
+        App\Providers\WeiServiceProvider::class,
+
     ],
 
     /*
