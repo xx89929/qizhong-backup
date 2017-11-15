@@ -16,27 +16,27 @@
 
             <div class="company-regist-content text-center">
                 <div class="company-regist-item col-md-2 col-md-offset-1">
-                    <img class="lazy img-responsive img-circle center-block" data-original="{{url('image/company-register-1.png')}}" alt="..." >
+                    <img alt="海南注册公司步骤1" class="lazy img-responsive img-circle center-block" data-original="{{url('image/company-register-1.png')}}" alt="..." >
                     <h3>步骤一</h3>
                     <p>与客户洽谈签订注册公司确认单</p>
                 </div>
                 <div class="company-regist-item col-md-2">
-                    <img class="lazy img-responsive img-circle center-block" data-original="{{url('image/company-register-2.png')}}" alt="..." >
+                    <img alt="海南注册公司步骤2" class="lazy img-responsive img-circle center-block" data-original="{{url('image/company-register-2.png')}}" alt="..." >
                     <h3>步骤二</h3>
                     <p>公司预先核名确定公司名称可以正常使用</p>
                 </div>
                 <div class="company-regist-item col-md-2">
-                    <img class="lazy img-responsive img-circle center-block" data-original="{{url('image/company-register-3.png')}}" alt="..." >
+                    <img alt="海南注册公司步骤3" class="lazy img-responsive img-circle center-block" data-original="{{url('image/company-register-3.png')}}" alt="..." >
                     <h3>步骤三</h3>
                     <p>提供材料，由我们来交给相关部门审批并领取营业执照</p>
                 </div>
                 <div class="company-regist-item col-md-2">
-                    <img class="lazy img-responsive img-circle center-block" data-original="{{url('image/company-register-5.png')}}" alt="..." >
+                    <img alt="海南注册公司步骤4" class="lazy img-responsive img-circle center-block" data-original="{{url('image/company-register-5.png')}}" alt="..." >
                     <h3>步骤四</h3>
                     <p>领取营业执照</p>
                 </div>
                 <div class="company-regist-item col-md-2">
-                    <img class="lazy img-responsive img-circle center-block" data-original="{{url('image/company-register-4.png')}}" alt="..." >
+                    <img alt="海南注册公司步骤5" class="lazy img-responsive img-circle center-block" data-original="{{url('image/company-register-4.png')}}" alt="..." >
                     <h3>步骤五</h3>
                     <p>刻三章：公章、财务章、法人章</p>
                 </div>

@@ -7,6 +7,8 @@
     <!-- 上述3个meta标签*必须*放在最前面，任何其他内容都*必须*跟随其后！ -->
     <!-- 百度JS接口说明 -->
     <meta name="viewport" content="initial-scale=1.0, user-scalable=no" />
+    <meta name="description" content="海南企众官网，公司注册，公司变更，公司注销，记账报税，公司建站" />
+    <meta name="keywords" content="海南企众官网，海南公司注册，海南公司变更，海南公司注销，海南记账报税，海南公司建站" />
     <title>{{$web_title}}</title>
     <!-- Bootstrap -->
     <link href="{{url('css/bootstrap_index.css') }}" rel="stylesheet">

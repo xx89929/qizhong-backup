@@ -14,7 +14,7 @@
                 </p>
             </div>
             <div class="jizhang-content">
-                <img class="lazy img-responsive center-block" data-original="{{url('image/jizhang-1.png')}}">
+                <img alt="记账报税软件" class="lazy img-responsive center-block" data-original="{{url('image/jizhang-1.png')}}">
             </div>
         </div>
     </div>

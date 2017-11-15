@@ -9,7 +9,7 @@ use Illuminate\Http\Request;
 class WeiChooseController extends Controller
 {
     public function create(Request $request){
-//        return $request->input('value');exit;
+        //return $request->input('value');exit;
         if(empty($request->input('value')) || $request == '[]') {
             return ['msg' => 'not value'];
         }

@@ -49,4 +49,9 @@ $(function() {
 
 $(document).ready(function(){
     $("#top_btn").click(function(){if(scroll=="off") return;$("html,body").animate({scrollTop: 0}, 600);});
+    $(".wx_ewm_small").hover(function(){
+        $(".wx_ewm_big").show();
+    },function(){
+        $(".wx_ewm_big").hide();
+    })
 });

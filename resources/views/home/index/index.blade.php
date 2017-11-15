@@ -24,10 +24,10 @@
 @include('home.index.web_exp')
 
 <!-----------------------OurTeam------------------>
-@include('home.index.us_team')
+{{--@include('home.index.us_team')--}}
 
 <!-----------------------Price-List------------------>
-@include('home.index.price-list')
+{{--@include('home.index.price-list')--}}
 
 <!----------------choose-us-div--------------->
 @include('home.layouts.chooseup')

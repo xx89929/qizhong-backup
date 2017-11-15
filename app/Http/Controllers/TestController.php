@@ -17,6 +17,8 @@ class TestController extends Controller
 
 
     public function index(){
+        return view('test');
+
 //        $test = App::make('Wei');
 //        $test->callme('make test');
        // $this->test->callme('hahaha');

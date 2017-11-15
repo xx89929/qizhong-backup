@@ -6,6 +6,11 @@ function test_func(){
 }
 
 
+/**
+ * 获取3rd_session
+ * @param $len
+ * @return string
+ */
 function three_rd_session($len) {
 
 
@@ -35,8 +40,9 @@ $result = base64_encode($result);
 // remove none url chars
 
 $result = strtr($result, '+/', '-_');
-    var_dump(substr($result, 0, $len));exit;
 
 return substr($result, 0, $len);
 
 }
+
+

@@ -19,6 +19,13 @@
         </li>
 
         <li>
+            <a class="pull-right" href="#" data-toggle="modal" data-target="#myModal">
+                <img class="wx_ewm_big" src="{{url('image/weixin_pt.jpg')}}">
+                <img class="wx_ewm_small" src="{{url('image/wx_gzpt.png')}}">
+            </a>
+        </li>
+
+        <li>
             <a id="top_btn" class="pull-right" href="#">
                 <img class="kefu-hide " src="{{url('image/ll06.png')}}">
                 <img class="kefu-show" src="{{url('image/l06.png')}}">

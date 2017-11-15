@@ -363,6 +363,17 @@ display: block;
     width:49px;
 }
 
+.wx_ewm_small{
+    margin-right: 0px;
+    display: block;
+}
+.wx_ewm_big{
+    position: fixed;
+    right: 50px;
+    top:380px;
+    display: none;
+}
+
 /***********************about_us*******************************/
 .about-imgages_gly{
     font-size:30px;

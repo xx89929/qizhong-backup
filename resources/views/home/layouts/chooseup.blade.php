@@ -55,6 +55,8 @@
                             @if($errors->has('data.services'))
                                 <span class="help-block-my">{{$errors->first('data.services')}}</span>
                             @endif
+
+                            <input name="data[request_type]" type="hidden" value="官网">
                         </div>
                         <button type="submit" class="btn btn-info btn-lg">提交</button>
                     </form>
